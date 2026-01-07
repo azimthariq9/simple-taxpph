@@ -15,3 +15,7 @@ def index():
     return {"message": "Welcome to the PPh21 calculator API",
             "status": "FastAPI is running"
             }  
+
+@app.get("/health")
+def health():
+    return {"status": "OK"}
